@@ -1,0 +1,57 @@
+:root{
+    --h1-font-family: 'Lobster', cursive;
+    --main-font-family: 'Inria Sans', sans-serif;
+    --main-color: #891B26;
+    --btn-text-color: color: rgb(36, 36, 36);
+}
+
+* {
+ font-family: var(--main-font-family);
+}
+
+body {
+    background: rgb(227,216,136);
+    background: radial-gradient(circle, rgba(227, 216, 136, 0.116) 0%, rgba(132, 113, 79, 0.068) 50%, rgba(90, 58, 49, 0.062) 100%);
+}
+
+h1 {
+    font-family: var(--h1-font-family);
+    font-size: 3em;
+    color: var(--main-color);
+}
+
+
+.col-12 {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-custom {
+    background: linear-gradient(43deg, rgba(137, 27, 38, 0.5) 0%, rgba(73, 14, 20, 0.164) 50%, rgba(137, 27, 38, 0.5) 100%);
+    border-color: rgba(137, 27, 38, 0.5);
+    width: 15vw;
+    color: var(--btn-text-color);
+}
+
+.btn-custom:hover {
+    border-width: .2rem;
+    border-color: var(--main-color);
+    padding: .4rem;
+    background: linear-gradient(43deg, rgba(73, 14, 20, 0.164) 0%, rgba(137, 27, 38, 0.5) 50%, rgba(73, 14, 20, 0.164) 100%);
+    color: black;
+    font-weight: bolder;
+}
+
+/* .container .row:nth-child(2) .col-12:nth-child(2) {
+    border: 1px solid var(--main-color);
+    border-radius: 1rem;
+    width: 10%;
+    vertical-align: middle;
+} */
+
+.form-control{
+    border: 1px solid var(--main-color);
+    border-radius: .25rem;
+    width: 15vw;
+}
+
