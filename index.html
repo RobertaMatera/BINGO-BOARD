@@ -28,23 +28,36 @@
                 <h1>Bingo Board</h1>
             </div>
         </div>
+        
+        <div class="row">
+            <div class="col-12 my-3 main-board">
+
+            </div>
+        </div>
+
         <div class="row">
             <div class="col-12 my-3">
-                <button id="random-btn" type="button" class="btn btn-custom">Generate randome number</button>
+                <button id="random-btn" type="button" class="btn btn-custom">Generate random number</button>
             </div>
             <div id="randNumbDiv" class="col-12 my-3">
 
             </div>
-            <div class="col-12 my-3">
-                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+            <div class="col-12 my-3 d-block">
+                <h5 class="text-center">How many boards do you want?</h5>
+                <div class="input-group mb-3 mx-auto">
+                    <select class="custom-select" id="usersNumBoard">
+                      <option selected>Choose...</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                    </select>
+                  </div>
             </div>
             <div class="col-12 my-3">
-                <button type="button" class="btn btn-custom">Generate user boards</button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 my-3 main-board">
-
+                <button id="user-board-btn" type="button" class="btn btn-custom">Generate user boards</button>
             </div>
         </div>
     </div>
