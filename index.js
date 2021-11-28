@@ -27,6 +27,13 @@ const generateRandomNumber = (range) => {
 
     const cells = document.querySelectorAll('.main-board .cell')
     cells[randomNumb-1].classList.add('highlight')
+
+    const userCells = document.querySelectorAll('.user-cell')
+    userCells.forEach(cells => {
+        if(parseInt(cells.innerText) === randomNumb){
+            cells.classList.add('highlight')
+        }
+    })
 }
 
 
