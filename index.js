@@ -9,7 +9,7 @@ const generateMainBoard = () => {
 const fillArray = () => {
     const arr = []
     for (let i = 0; i < 76; i++) {
-        arr.push(i)
+        arr.push(i+1)
     }
     return arr
 }
@@ -26,7 +26,7 @@ const generateRandomNumber = (range) => {
     randNumbDiv.innerText = "Number: " + randomNumb
 
     const cells = document.querySelectorAll('.main-board .cell')
-    cells[randomNumb].classList.add('highlight')
+    cells[randomNumb-1].classList.add('highlight')
 }
 
 window.onload = function () {
